@@ -1,0 +1,8 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "headdons:item/ostrum_integral_components",
+    "layer1": "headdons:item/integral_componet_lights",
+    "layer2": "headdons:item/integral_components_anim"
+  }
+}

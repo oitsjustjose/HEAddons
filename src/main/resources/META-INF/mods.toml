@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="GNU GPLv3"
+
+[[mods]]
+modId="headdons"
+version="${file.jarVersion}"
+displayName="Harmonious Engineering Addons"
+displayURL="http://github.com/oitsjustjose/v-tweaks"
+credits=""
+authors="oitsjustjose"
+description='''Doing the last few things that KubeJS can't :)'''
+
+[[dependencies.headdons]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.headdons]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18,)"
+    ordering="NONE"
+    side="BOTH"
