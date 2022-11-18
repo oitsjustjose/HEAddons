@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2
+
+### Fixed
+
+- DBE blocks dropping while in creative
+
 ## 1.0.1
 
 ### Added

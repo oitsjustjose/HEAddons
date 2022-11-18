@@ -13,13 +13,12 @@ import java.util.Objects;
 public class DaveBlockBreakEvent {
     @SubscribeEvent
     public void registerEvent(BlockEvent.BreakEvent event) {
-        if (!Objects.requireNonNull(event.getState().getBlock().getRegistryName()).getNamespace().equals("davebuildingmod")) {
-            return;
-        }
-
-        if (!(event.getWorld() instanceof ServerLevel serverLevel)) return;
         var block = event.getState().getBlock();
         var stack = event.getPlayer().getMainHandItem();
+
+        if (event.getPlayer().isCreative()) return;
+        if (!Objects.requireNonNull(block.getRegistryName()).getNamespace().equals("davebuildingmod")) return;
+        if (!(event.getWorld() instanceof ServerLevel serverLevel)) return;
 
         // Only force the drop if the block drop is broken in the first place
         if (!block.canHarvestBlock(event.getState(), serverLevel, event.getPos(), event.getPlayer())) {
