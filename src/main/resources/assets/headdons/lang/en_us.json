@@ -4,5 +4,7 @@
   "item.headdons.ostrum_integral_components": "Ostrum Integral Components",
   "item.headdons.calorite_integral_components.desc": "§6Improves base attributes. Other augments may be more effective as a result.§r",
   "item.headdons.desh_integral_components.desc": "§6Improves base attributes. Other augments may be more effective as a result.§r",
-  "item.headdons.ostrum_integral_components.desc": "§6Improves base attributes. Other augments may be more effective as a result.§r"
+  "item.headdons.ostrum_integral_components.desc": "§6Improves base attributes. Other augments may be more effective as a result.§r",
+  "item.headdons.portable_stonecutter": "Portable Stonecutter",
+  "container.headdons.portable_stonecutter": "Portable Stonecutter"
 }

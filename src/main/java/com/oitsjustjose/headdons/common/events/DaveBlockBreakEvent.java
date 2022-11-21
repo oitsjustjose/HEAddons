@@ -2,6 +2,7 @@ package com.oitsjustjose.headdons.common.events;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.Vec3;
@@ -19,6 +20,7 @@ public class DaveBlockBreakEvent {
         if (event.getPlayer().isCreative()) return;
         if (!Objects.requireNonNull(block.getRegistryName()).getNamespace().equals("davebuildingmod")) return;
         if (!(event.getWorld() instanceof ServerLevel serverLevel)) return;
+        if (stack.getItem() instanceof TieredItem) return;
 
         // Only force the drop if the block drop is broken in the first place
         if (!block.canHarvestBlock(event.getState(), serverLevel, event.getPos(), event.getPlayer())) {

@@ -2,6 +2,7 @@ package com.oitsjustjose.headdons;
 
 import cofh.thermal.lib.common.ThermalAugmentRules;
 import com.oitsjustjose.headdons.common.Item.CustomIntegralComponent;
+import com.oitsjustjose.headdons.common.Item.PortableStoneCutterItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -25,5 +26,7 @@ public class Registry {
             ThermalAugmentRules.flagUniqueAugment(item);
             return item;
         });
+
+        ITEM_REGISTRY.register("portable_stonecutter", PortableStoneCutterItem::new);
     }
 }
