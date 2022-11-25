@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3
+
+### Added
+
+- Portable Stonecutter
+
 ## 1.0.2
 
 ### Fixed
